@@ -1,5 +1,11 @@
 #include <stdio.h>
 #include <windows.h>
+//Tom je buh
+
+
+void bait(){
+    printf("Svoji vyhru si vyzvednete zde: https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+}
 
 void print_table (char *table, int size){
     printf (
@@ -70,9 +76,16 @@ int check_vertical (char *table){
 }
 int check_status (char *table){
     if (check_horizontaly(table) == 1 || check_vertical(table) == 1)
-    {printf ("\nCONGRATULATIONS PLAYER 1 WON\n"); return 1;}
+    {
+        printf ("\nCONGRATULATIONS PLAYER 1 WON\n");
+        bait();
+        return 1;}
     if (check_horizontaly(table) == 2 || check_vertical(table) == 2)
-    {printf ("\nCONGRATULATIONS PLAYER 2 WON\n"); return 1;}
+    {
+        printf ("\nCONGRATULATIONS PLAYER 2 WON\n");
+        bait();
+        return 1;        
+    }
 
     return 0;
 }
