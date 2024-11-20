@@ -91,7 +91,7 @@ void game (void){
         if(check_status(table) != 0){printf("\nEND OF THE GAME THANKS FOR PLAYING\n"); status = 1; break;}
         print_table(table, table_size);
     }
-    if(status == 0){printf ("NOBODY WON OMG U BAD + L + RATIO\n");}
+    if(status == 0){printf ("ITS A TIE\n");}
 }
 int main() {
     game();
